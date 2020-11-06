@@ -10,10 +10,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
+    private Shake mouseToShake;
+
     private void Awake() 
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        mouseToShake = GetComponent<Shake>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -32,6 +35,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta;
         canvasGroup.alpha = 0.6f;
+
+        mouseToShake.MouseToShake();
     }
 
     public void OnEndDrag(PointerEventData eventData)
