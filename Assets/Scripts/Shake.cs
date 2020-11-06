@@ -43,6 +43,7 @@ public class Shake : MonoBehaviour
             if (shakeCounter > 3)
             {
                 Debug.Log("Shake");
+                GetComponent<DropParticles>().InstantiateParticleSystem();
             }
         }
         else if (Time.time - shakeTime > 1f)

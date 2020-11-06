@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 1230638769}
   - component: {fileID: 1230638772}
   - component: {fileID: 1230638773}
+  - component: {fileID: 1230638774}
   m_Layer: 0
   m_Name: Carrot
   m_TagString: Untagged
@@ -387,6 +388,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1230638774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230638767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!1 &1241083185
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,8 +574,8 @@ Canvas:
   m_GameObject: {fileID: 1842137357}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1241083187}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
