@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
+
+    private Vector2 originalPosition;
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -16,6 +19,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         mouseToShake = GetComponent<Shake>();
+
+        originalPosition = new Vector2(rectTransform.position.x, rectTransform.position.y);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -43,5 +48,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         Debug.Log("OnEndDrag");
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
+
+        rectTransform.DOMove(originalPosition, 1f).SetEase(Ease.InOutSine);
     }
 }
