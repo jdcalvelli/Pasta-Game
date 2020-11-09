@@ -52,6 +52,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        rectTransform.DOMove(originalPosition, 1f).SetEase(Ease.InOutSine);
+        rectTransform.DOMove(originalPosition * canvas.scaleFactor, 1f).SetEase(Ease.InOutSine);
     }
 }
