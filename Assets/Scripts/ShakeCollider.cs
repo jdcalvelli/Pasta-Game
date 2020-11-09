@@ -7,6 +7,8 @@ public class ShakeCollider : MonoBehaviour
 
 public Shake shake;
 
+public int IngredientAmountCounter;
+
 private void Awake() 
 {
     shake = GetComponent<Shake>();
@@ -17,7 +19,8 @@ private void OnTriggerStay2D(Collider2D other)
     Debug.Log("triggering!");
     if (shake.RegisterShake)
     {
-        Debug.Log("trigger register shaking");
+        IngredientAmountCounter++;
+        Debug.Log("ingredient amount counter " + IngredientAmountCounter);
     }
 }
 
