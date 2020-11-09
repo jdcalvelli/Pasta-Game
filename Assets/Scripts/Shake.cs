@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Shake : MonoBehaviour
 {
-    private bool shake;
+    public bool IsShaking;
+
+    public bool RegisterShake;
     Vector2 oldMouseAxis;
 
     private int shakeCounter;
@@ -32,23 +34,29 @@ public class Shake : MonoBehaviour
         Vector2 mouseAxis = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         //Debug.Log(mouseAxis);
 
-        this.shake = Mathf.Sign(mouseAxis.y) != Mathf.Sign(this.oldMouseAxis.y) && 
+        this.IsShaking = Mathf.Sign(mouseAxis.y) != Mathf.Sign(this.oldMouseAxis.y) && 
             Mathf.Abs(Mathf.Abs(mouseAxis.y) - Mathf.Abs(oldMouseAxis.y)) > 0.05f;
         this.oldMouseAxis = mouseAxis;
 
-        if (this.shake)
+        if (this.IsShaking)
         {
             shakeCounter++;
             shakeTime = Time.time;
             if (shakeCounter > 3)
             {
-                Debug.Log("Shake");
+                Debug.Log("Register Shake");
+                RegisterShake = true;
                 GetComponent<DropParticles>().InstantiateParticleSystem();
             }
         }
-        else if (Time.time - shakeTime > 1f)
+        else if (Time.time - shakeTime > 2f)
         {
             shakeCounter = 0;
+            RegisterShake = false;
+        }
+        else
+        {
+            RegisterShake = false;
         }
     }
        
