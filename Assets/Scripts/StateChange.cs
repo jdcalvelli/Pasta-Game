@@ -15,10 +15,5 @@ public class StateChange : MonoBehaviour
     public void ChangeState()
     {
         GameManager.GameState++;
-        if (GameManager.GameState == 2 && GameManager.ChangeState == false);
-        {
-            GameManager.TriggerExposition(1);
-            GameManager.ChangeState = true;
-        }
     }
 }

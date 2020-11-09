@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public int GameState;
 
-    public bool ChangeState;
+    public bool ChangeState = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (GameState == 2 && ChangeState == false)
+        {
+            TriggerExposition(1);
+            ChangeState = true;
+        }
     }
 
     private void StartExposition()
