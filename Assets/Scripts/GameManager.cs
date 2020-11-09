@@ -7,19 +7,21 @@ public class GameManager : MonoBehaviour
 
     public List<StoryElement> expositionElements;
 
-    public string GameState;
+    public int GameState;
+
+    public bool ChangeState;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameState = "Part 1";
+        GameState = 1;
         Invoke("StartExposition", 0.5f); //like a coroutine lmao
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void StartExposition()
@@ -27,7 +29,7 @@ public class GameManager : MonoBehaviour
         TriggerExposition(0);
     }
 
-    private void TriggerExposition(int exposition)
+    public void TriggerExposition(int exposition)
     {
         expositionElements[exposition].TriggerDialogue();
     }

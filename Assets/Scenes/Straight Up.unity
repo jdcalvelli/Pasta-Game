@@ -930,7 +930,8 @@ MonoBehaviour:
   - {fileID: 654576116}
   - {fileID: 1943543113}
   - {fileID: 1521558916}
-  GameState: 
+  GameState: 0
+  ChangeState: 0
 --- !u!4 &625559219
 Transform:
   m_ObjectHideFlags: 0
@@ -1007,7 +1008,7 @@ GameObject:
   - component: {fileID: 767013370}
   - component: {fileID: 767013369}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Change State Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1042,15 +1043,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 767013367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 4fb43e9a38b1d574c8464e5bc2a6a999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Mia Atterberry
-    sentences:
-    - This is line ONE of test
-    - This is line TWO of test
-    - This is line THREE of test
+  GameManager: {fileID: 0}
 --- !u!114 &767013370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1095,7 +1091,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 767013369}
-        m_MethodName: TriggerDialogue
+        m_MethodName: ChangeState
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
