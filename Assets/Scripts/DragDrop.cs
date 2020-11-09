@@ -7,6 +7,8 @@ using DG.Tweening;
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
 
+    [SerializeField] private Canvas canvas;
+
     private Vector2 originalPosition;
 
     private RectTransform rectTransform;
@@ -16,6 +18,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private void Awake() 
     {
+        canvas = FindObjectOfType<Canvas>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         mouseToShake = GetComponent<Shake>();
@@ -37,7 +40,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
-        rectTransform.anchoredPosition += eventData.delta;
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         canvasGroup.alpha = 0.6f;
 
         mouseToShake.MouseToShake();
