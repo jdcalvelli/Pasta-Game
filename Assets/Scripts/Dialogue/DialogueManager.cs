@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("end conversation");
 
-        DialogueBox.GetComponent<RectTransform>().DOMoveY(-10, 1f).SetEase(Ease.InOutSine);
+        DialogueBox.GetComponent<RectTransform>().DOMoveY(-8f, 1f).SetEase(Ease.InOutSine);
     }
 
 }
