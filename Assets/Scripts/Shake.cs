@@ -54,7 +54,7 @@ public class Shake : MonoBehaviour
             shakeCounter = 0;
             RegisterShake = false;
         }
-        else
+        else 
         {
             RegisterShake = false;
         }

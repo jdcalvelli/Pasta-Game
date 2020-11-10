@@ -64,8 +64,9 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         rectTransform.DOMove(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine);
 
         //add stage two story elements
-        if (GameManager.GameState == 2)
+        if (GameManager.GameState == 2 || GameManager.GameState == 3)
         {
+            GameManager.IngredientsAdded.Add(this.gameObject);
             this.storyElements[0].TriggerDialogue();
         }
     }

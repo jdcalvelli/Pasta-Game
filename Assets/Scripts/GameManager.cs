@@ -34,6 +34,11 @@ public class GameManager : MonoBehaviour
             TriggerExposition(2);
             ChangeState = false;
         }
+        else if(GameState == 4 && ChangeState == false)
+        {
+            TriggerExposition(3);
+            ChangeState = true;
+        }
 
     }
 
