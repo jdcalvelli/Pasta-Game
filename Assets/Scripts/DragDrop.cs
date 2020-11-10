@@ -67,7 +67,10 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         Sequence mySequence = DOTween.Sequence();
 
         mySequence.Append(rectTransform.DOMove(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine));
-        mySequence.AppendCallback(()=> DialogueManager.ToggleDragDrop(false));
+        if (GameManager.IngredientsAdded.Contains(this.gameObject))
+        {
+            mySequence.AppendCallback(()=> DialogueManager.ToggleDragDrop(false));
+        }
         mySequence.Play();
 
         //add stage two story elements
