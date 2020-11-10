@@ -3418,6 +3418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  Ingredients: {fileID: 2106025215}
   NameText: {fileID: 1340812447}
   DialogueText: {fileID: 1415698570}
   DialogueBox: {fileID: 2061178456}

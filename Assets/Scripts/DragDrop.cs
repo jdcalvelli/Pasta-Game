@@ -9,6 +9,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public GameManager GameManager;
 
+    public DialogueManager DialogueManager;
+
     public List<StoryElement> storyElements;
 
     [SerializeField] private Canvas canvas;
@@ -23,6 +25,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private void Awake() 
     {
         GameManager = FindObjectOfType<GameManager>();
+        DialogueManager = FindObjectOfType<DialogueManager>();
         
         canvas = FindObjectOfType<Canvas>();
         rectTransform = GetComponent<RectTransform>();
@@ -61,7 +64,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        rectTransform.DOMove(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine);
+        Sequence mySequence = DOTween.Sequence();
+
+        mySequence.Append(rectTransform.DOMove(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine));
+        mySequence.AppendCallback(()=> DialogueManager.ToggleDragDrop(false));
+        mySequence.Play();
 
         //add stage two story elements
         if (GameManager.GameState == 2 || GameManager.GameState == 3)

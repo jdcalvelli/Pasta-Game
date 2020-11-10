@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
 
     public GameManager GameManager;
 
+    public GameObject Ingredients;
+
     public Text NameText;
     public Text DialogueText;
 
@@ -22,11 +24,15 @@ public class DialogueManager : MonoBehaviour
         GameManager = FindObjectOfType<GameManager>();
 
         sentences = new Queue<string>();
+
+        ToggleDragDrop(false);
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
         DialogueBox.GetComponent<RectTransform>().DOMoveY(-3f, 1f).SetEase(Ease.InOutSine);
+
+        //deactivate non text stuff
 
         Debug.Log("starting conversation with " + dialogue.name);
 
@@ -59,10 +65,21 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("end conversation");
 
+        //reactivate non text stuff in sequence?
+
         Sequence mySequence = DOTween.Sequence();
         mySequence.Append(DialogueBox.GetComponent<RectTransform>().DOMoveY(-8f, 1f).SetEase(Ease.InOutSine));
+        mySequence.AppendCallback(()=> ToggleDragDrop(true));
         mySequence.AppendCallback(()=> GameManager.StateChanger());
         mySequence.Play();
     }
 
+
+    public void ToggleDragDrop(bool value)
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            Ingredients.transform.GetChild(i).GetComponent<DragDrop>().enabled = value;
+        }
+    }
 }
