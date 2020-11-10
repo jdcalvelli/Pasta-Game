@@ -35,6 +35,7 @@ public class DialogueManager : MonoBehaviour
         Sequence mySequence = DOTween.Sequence();
         mySequence.Insert(0f, DialogueBox.GetComponent<RectTransform>().DOMoveY(-3f, 1f).SetEase(Ease.InOutSine));
         mySequence.Insert(0f, BehindDialogueBox.GetComponent<CanvasGroup>().DOFade(0.5f, 0.5f));
+        mySequence.AppendCallback(()=> ToggleDragDrop(false));
         mySequence.Play();
 
         //deactivate non text stuff

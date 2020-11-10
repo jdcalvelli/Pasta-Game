@@ -7,6 +7,8 @@ public class ShakeCollider : MonoBehaviour
 
 public GameManager GameManager;
 
+public DragDrop DragDrop;
+
 public List<StoryElement> storyElements;
 public int[] ingredientCounts;
 
@@ -17,6 +19,7 @@ public int IngredientAmountCounter;
 private void Awake() 
 {
     GameManager = FindObjectOfType<GameManager>();
+    this.DragDrop = GetComponent<DragDrop>();
 
     this.shake = GetComponent<Shake>();
 }

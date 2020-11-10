@@ -47,13 +47,14 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         Debug.Log("OnBeginDrag");
         canvasGroup.blocksRaycasts = false;
+
+        canvasGroup.DOFade(0.5f, 0.5f);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-        canvasGroup.DOFade(0.5f, 0.5f);
 
         mouseToShake.MouseToShake();
     }
@@ -67,10 +68,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         Sequence mySequence = DOTween.Sequence();
 
         mySequence.Append(rectTransform.DOMove(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine));
-        if (GameManager.IngredientsAdded.Contains(this.gameObject))
-        {
-            mySequence.AppendCallback(()=> DialogueManager.ToggleDragDrop(false));
-        }
         mySequence.Play();
 
         //add stage two story elements
