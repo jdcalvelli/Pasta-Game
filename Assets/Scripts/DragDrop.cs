@@ -53,7 +53,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-        canvasGroup.alpha = 0.6f;
+        canvasGroup.DOFade(0.5f, 0.5f);
 
         mouseToShake.MouseToShake();
     }
@@ -62,7 +62,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         Debug.Log("OnEndDrag");
         canvasGroup.blocksRaycasts = true;
-        canvasGroup.alpha = 1f;
+        canvasGroup.DOFade(1f, 0.5f);
 
         Sequence mySequence = DOTween.Sequence();
 
