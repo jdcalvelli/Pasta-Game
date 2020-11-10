@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     public bool ChangeState = false;
 
+    public List<GameObject> IngredientsAdded;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (IngredientsAdded.Count == 8)
+        {
+            StateChanger();
+            IngredientsAdded.Clear();
+        }
+
         if (GameState == 2 && ChangeState == false)
         {
             TriggerExposition(1);
@@ -31,6 +39,7 @@ public class GameManager : MonoBehaviour
             TriggerExposition(2);
             ChangeState = false;
         }
+
     }
 
     private void StartExposition()

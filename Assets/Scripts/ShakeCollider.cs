@@ -36,6 +36,7 @@ private void OnTriggerStay2D(Collider2D other)
                 if (this.IngredientAmountCounter == this.ingredientCounts[i])
                 {
                     this.storyElements[i].TriggerDialogue();
+                    GameManager.IngredientsAdded.Add(this.gameObject);
                 }
             }
         }
