@@ -7,6 +7,10 @@ using DG.Tweening;
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
 
+    public GameManager GameManager;
+
+    public List<StoryElement> storyElements;
+
     [SerializeField] private Canvas canvas;
 
     private Vector2 originalPosition;
@@ -18,6 +22,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private void Awake() 
     {
+        GameManager = FindObjectOfType<GameManager>();
+        
         canvas = FindObjectOfType<Canvas>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
@@ -56,5 +62,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.alpha = 1f;
 
         rectTransform.DOMove(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine);
+
+        //add stage two story elements
+        if (GameManager.GameState == 2)
+        {
+            this.storyElements[0].TriggerDialogue();
+        }
     }
 }

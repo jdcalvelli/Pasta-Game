@@ -42,4 +42,9 @@ public class GameManager : MonoBehaviour
     {
         expositionElements[exposition].TriggerDialogue();
     }
+
+    public void StateChanger()
+    {
+        GameState++;
+    }
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class ShakeCollider : MonoBehaviour
 {
 
+public GameManager GameManager;
+
 public List<StoryElement> storyElements;
 public int[] ingredientCounts;
 
@@ -14,24 +16,31 @@ public int IngredientAmountCounter;
 
 private void Awake() 
 {
+    GameManager = FindObjectOfType<GameManager>();
+
     this.shake = GetComponent<Shake>();
 }
 
 private void OnTriggerStay2D(Collider2D other) 
 {
     Debug.Log("triggering!");
-    if (this.shake.RegisterShake)
+
+    if (GameManager.GameState == 1)
     {
-        this.IngredientAmountCounter++;
-        Debug.Log("ingredient amount counter " + this.IngredientAmountCounter);
-        for (int i = 0; i < this.storyElements.Count; i++)
+        if (this.shake.RegisterShake)
         {
-            if (this.IngredientAmountCounter == this.ingredientCounts[i])
+            this.IngredientAmountCounter++;
+            Debug.Log("ingredient amount counter " + this.IngredientAmountCounter);
+            for (int i = 0; i < this.storyElements.Count; i++)
             {
-                this.storyElements[i].TriggerDialogue();
+                if (this.IngredientAmountCounter == this.ingredientCounts[i])
+                {
+                    this.storyElements[i].TriggerDialogue();
+                }
             }
         }
     }
+
 }
 
 }
