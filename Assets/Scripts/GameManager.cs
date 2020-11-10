@@ -23,11 +23,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IngredientsAdded.Count == 8)
-        {
-            StateChanger();
-            IngredientsAdded.Clear();
-        }
 
         if (GameState == 2 && ChangeState == false)
         {
@@ -54,6 +49,12 @@ public class GameManager : MonoBehaviour
 
     public void StateChanger()
     {
-        GameState++;
+        if (IngredientsAdded.Count == 8)
+        {
+            GameState++;
+            IngredientsAdded.Clear();
+        }
+
     }
+
 }

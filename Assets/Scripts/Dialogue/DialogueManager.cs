@@ -7,6 +7,9 @@ using DG.Tweening;
 public class DialogueManager : MonoBehaviour
 {
 
+
+    public GameManager GameManager;
+
     public Text NameText;
     public Text DialogueText;
 
@@ -16,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     
     void Start()
     {
+        GameManager = FindObjectOfType<GameManager>();
+
         sentences = new Queue<string>();
     }
 
@@ -54,7 +59,10 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("end conversation");
 
-        DialogueBox.GetComponent<RectTransform>().DOMoveY(-8f, 1f).SetEase(Ease.InOutSine);
+        Sequence mySequence = DOTween.Sequence();
+        mySequence.Append(DialogueBox.GetComponent<RectTransform>().DOMoveY(-8f, 1f).SetEase(Ease.InOutSine));
+        mySequence.AppendCallback(()=> GameManager.StateChanger());
+        mySequence.Play();
     }
 
 }
