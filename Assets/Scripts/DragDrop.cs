@@ -22,8 +22,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         mouseToShake = GetComponent<Shake>();
+    }
 
-        originalPosition = new Vector2(rectTransform.position.x, rectTransform.position.y);
+    private void Start() 
+    {
+        originalPosition = new Vector3(rectTransform.position.x, rectTransform.position.y, 0f);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -52,6 +55,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        rectTransform.DOMove(originalPosition * canvas.scaleFactor, 1f).SetEase(Ease.InOutSine);
+        rectTransform.DOMove(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine);
     }
 }
