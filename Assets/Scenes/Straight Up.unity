@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 491967837}
   ingredientCounts: 0a000000
@@ -662,6 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1355920007}
   ingredientCounts: 0a000000
@@ -964,6 +966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1767495761}
   ingredientCounts: 0a000000
@@ -2003,6 +2006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1283674874}
   ingredientCounts: 0a000000
@@ -2727,6 +2731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 57572891}
   ingredientCounts: 0a000000
@@ -3125,7 +3130,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1600, y: 900}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3210,6 +3215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1155954252}
   ingredientCounts: 0f000000
@@ -3670,6 +3676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1952661515}
   ingredientCounts: 0f000000
@@ -3872,6 +3879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 900300291}
   ingredientCounts: 0a000000

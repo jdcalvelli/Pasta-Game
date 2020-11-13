@@ -33,7 +33,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         Sequence mySequence = DOTween.Sequence();
-        mySequence.Insert(0f, DialogueBox.GetComponent<RectTransform>().DOMoveY(-3f, 1f).SetEase(Ease.InOutSine));
+        mySequence.Insert(0f, DialogueBox.GetComponent<RectTransform>().DOAnchorPosY(-340f, 1f).SetEase(Ease.InOutSine));
         mySequence.Insert(0f, BehindDialogueBox.GetComponent<CanvasGroup>().DOFade(0.5f, 0.5f));
         mySequence.AppendCallback(()=> ToggleDragDrop(false));
         mySequence.Play();
@@ -74,7 +74,7 @@ public class DialogueManager : MonoBehaviour
         //reactivate non text stuff in sequence?
 
         Sequence mySequence = DOTween.Sequence();
-        mySequence.Insert(0f, DialogueBox.GetComponent<RectTransform>().DOMoveY(-8f, 1f).SetEase(Ease.InOutSine));
+        mySequence.Insert(0f, DialogueBox.GetComponent<RectTransform>().DOAnchorPosY(-740f, 1f).SetEase(Ease.InOutSine));
         mySequence.Insert(0f, BehindDialogueBox.GetComponent<CanvasGroup>().DOFade(1f, 0.5f));
         mySequence.AppendCallback(()=> ToggleDragDrop(true));
         mySequence.AppendCallback(()=> GameManager.StateChanger());

@@ -35,7 +35,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private void Start() 
     {
-        originalPosition = new Vector3(rectTransform.position.x, rectTransform.position.y, 0f);
+        originalPosition = new Vector3(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y, 0f);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -67,7 +67,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
         Sequence mySequence = DOTween.Sequence();
 
-        mySequence.Append(rectTransform.DOMove(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine));
+        mySequence.Append(rectTransform.DOAnchorPos(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine));
         mySequence.Play();
 
         //add stage two story elements
