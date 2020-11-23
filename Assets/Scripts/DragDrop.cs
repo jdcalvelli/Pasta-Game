@@ -38,6 +38,15 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         originalPosition = new Vector3(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y, 0f);
     }
 
+    private void OnMouseOver() 
+    {
+        if (!DialogueManager.isDialogBoxUp)
+        {
+            Debug.Log("i am hovering over the " + gameObject.name + " object");
+        }
+
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("OnPointerDown");
