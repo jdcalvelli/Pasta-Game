@@ -47,6 +47,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             
             Debug.Log("i am entering the " + gameObject.name + " object");
         
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
             GetComponentInChildren<Text>().DOFade(1f, 0.25f);
             
         }
@@ -109,10 +110,12 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         mySequence.Append(rectTransform.DOAnchorPos(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine));
         mySequence.Play();
 
-        Sequence mySequence2 = DOTween.Sequence();
-        mySequence2.AppendCallback(()=> gameObject.transform.GetChild(0).gameObject.SetActive(true));
-        mySequence2.Append(GetComponentInChildren<Text>().DOFade(0f, 0.25f));
-
+        if (DialogueManager.isDialogBoxUp)
+        {
+            Sequence mySequence2 = DOTween.Sequence();
+            mySequence2.Append(GetComponentInChildren<Text>().DOFade(0f, 0.25f));
+            mySequence2.AppendCallback(()=> gameObject.transform.GetChild(0).gameObject.SetActive(false));
+        }
 
         //add stage two story elements
         if (GameManager.GameState == 2 || GameManager.GameState == 3)
