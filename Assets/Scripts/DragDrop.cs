@@ -53,10 +53,21 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("OnDrag");
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 
-        mouseToShake.MouseToShake();
+        if (DialogueManager.isDialogBoxUp)
+        {
+            Sequence mySequence = DOTween.Sequence();
+
+            mySequence.Append(rectTransform.DOAnchorPos(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine));
+            mySequence.Play();
+        }
+        else
+        {
+            Debug.Log("OnDrag");
+            rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+
+            mouseToShake.MouseToShake();
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)

@@ -20,6 +20,9 @@ public class DialogueManager : MonoBehaviour
     public GameObject DialogueBox;
 
     private Queue<string> sentences; //restrictive list, first in first out
+
+    //for dropping objects in dragdrop script
+    public bool isDialogBoxUp = false;
     
     void Start()
     {
@@ -32,6 +35,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+
+        isDialogBoxUp = true;
 
         //activate dialogue box, then swipe it in
         Sequence mySequence = DOTween.Sequence();
@@ -71,6 +76,9 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+
+        isDialogBoxUp = false;
+
         Debug.Log("end conversation");
 
         //reactivate non text stuff in sequence?
