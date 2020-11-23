@@ -7,6 +7,7 @@ using DG.Tweening;
 public class GameManager : MonoBehaviour
 {
     public GameObject startingOverlay;
+    public GameObject endingOverlay;
 
     public List<StoryElement> expositionElements;
 
@@ -48,6 +49,11 @@ public class GameManager : MonoBehaviour
             TriggerExposition(3);
             ChangeState = false;
         }
+        else if (GameState == 5 && ChangeState == false) 
+        {
+            Debug.Log("AT THIS POINT THE GAME WILL QUIT");
+            EndingFades();
+        }
 
     }
 
@@ -60,9 +66,16 @@ public class GameManager : MonoBehaviour
         mySequence.AppendCallback(()=> startingOverlay.SetActive(false));
     }
 
-    private void StartExposition()
+    private void EndingFades() 
     {
-        TriggerExposition(0);
+        Sequence mySequence = DOTween.Sequence();
+        mySequence.AppendCallback(()=> endingOverlay.SetActive(true));
+        mySequence.Append(endingOverlay.GetComponent<CanvasGroup>().DOFade(1f, 1f));
+        mySequence.AppendInterval(3f);
+        mySequence.Append(endingOverlay.transform.GetChild(0).GetComponent<CanvasGroup>().DOFade(0f, 1f));
+        mySequence.AppendInterval(3f);
+        mySequence.AppendCallback(()=> Application.Quit());
+        
     }
 
     public void TriggerExposition(int exposition)
@@ -76,6 +89,10 @@ public class GameManager : MonoBehaviour
         {
             GameState++;
             IngredientsAdded.Clear();
+        }
+        else if (GameState == 4)
+        {
+            GameState++;
         }
 
     }
