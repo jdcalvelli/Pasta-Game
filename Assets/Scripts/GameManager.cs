@@ -76,8 +76,8 @@ public class GameManager : MonoBehaviour
     private void TitleFadeOut()
     {
         Sequence mySequence = DOTween.Sequence();
-        mySequence.AppendInterval(3f);
-        mySequence.Append(startingOverlay.GetComponent<CanvasGroup>().DOFade(0f, 1f));
+        mySequence.AppendInterval(4f);
+        mySequence.Append(startingOverlay.GetComponent<CanvasGroup>().DOFade(0f, 2f));
         mySequence.AppendCallback(()=> GameState++);
         mySequence.AppendCallback(()=> startingOverlay.SetActive(false));
     }
@@ -86,10 +86,10 @@ public class GameManager : MonoBehaviour
     {
         Sequence mySequence = DOTween.Sequence();
         mySequence.AppendCallback(()=> endingOverlay.SetActive(true));
-        mySequence.Append(endingOverlay.GetComponent<CanvasGroup>().DOFade(1f, 1f));
-        mySequence.AppendInterval(3f);
-        mySequence.Append(endingOverlay.transform.GetChild(0).GetComponent<CanvasGroup>().DOFade(0f, 1f));
-        mySequence.AppendInterval(3f);
+        mySequence.Append(endingOverlay.GetComponent<CanvasGroup>().DOFade(1f, 2f));
+        mySequence.AppendInterval(4f);
+        mySequence.Append(endingOverlay.transform.GetChild(0).GetComponent<CanvasGroup>().DOFade(0f, 2f));
+        mySequence.AppendInterval(4f);
         mySequence.AppendCallback(()=> Application.Quit());
         
     }
