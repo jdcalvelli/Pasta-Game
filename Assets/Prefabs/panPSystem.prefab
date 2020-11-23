@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2157061798977361965}
   - component: {fileID: 5011410834462558024}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: panPSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,9 +226,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0, b: 0, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.97647065, g: 0.8862746, b: 0.7568628, a: 1}
+      maxColor: {r: 0.89019614, g: 0.47058827, b: 0.37254903, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

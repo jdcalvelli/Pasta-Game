@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class DropParticles : MonoBehaviour
 {
 
-    public GameObject pSystem;
-
+    public List<GameObject> pSystems = new List<GameObject>();
+    
     private float pTime;
     
-    public void InstantiateParticleSystem()
+    public void InstantiateParticleSystem(int i, float x, float y)
     {
-        GameObject instance = Object.Instantiate(pSystem, 
-            new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y), Quaternion.identity);
+        GameObject instance = Object.Instantiate(pSystems[i], 
+            new Vector2(x, y), Quaternion.identity);
     }
 
     

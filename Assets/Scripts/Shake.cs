@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Shake : MonoBehaviour
 {
+
+    public DropParticles ParticleSpawner;
+    public int PSystemToSpawn;
+
     public bool IsShaking;
 
     public bool RegisterShake;
@@ -19,6 +23,37 @@ public class Shake : MonoBehaviour
     {
         shakeCounter = 0;
         shakeTime = Time.time;    
+
+        ParticleSpawner = FindObjectOfType<DropParticles>();
+
+        switch (this.gameObject.name)
+        {
+            case "Wine":
+                this.PSystemToSpawn = 0;
+            break;
+            case "Chicken Broth":
+                this.PSystemToSpawn = 1;
+            break;
+            case "Pork":
+                this.PSystemToSpawn = 2;
+            break;
+            case "Pancetta":
+                this.PSystemToSpawn = 3;
+            break;
+            case "Carrot":
+                this.PSystemToSpawn = 4;
+            break;
+            case "Herbs":
+                this.PSystemToSpawn = 5;
+            break;
+            case "Onion":
+                this.PSystemToSpawn = 6;
+            break;
+            case "Celery":
+                this.PSystemToSpawn = 7;
+            break;
+        }
+    
     }
 
     public void MouseToShake()
@@ -46,7 +81,8 @@ public class Shake : MonoBehaviour
             {
                 Debug.Log("Register Shake");
                 RegisterShake = true;
-                GetComponent<DropParticles>().InstantiateParticleSystem();
+                ParticleSpawner.InstantiateParticleSystem(PSystemToSpawn, 
+                    this.gameObject.transform.position.x, this.gameObject.transform.position.y);
             }
         }
         else if (Time.time - shakeTime > 2f)

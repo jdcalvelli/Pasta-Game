@@ -184,7 +184,6 @@ GameObject:
   - component: {fileID: 94667930}
   - component: {fileID: 94667929}
   - component: {fileID: 94667928}
-  - component: {fileID: 94667927}
   - component: {fileID: 94667926}
   - component: {fileID: 94667925}
   - component: {fileID: 94667924}
@@ -281,19 +280,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 65}
   m_EdgeRadius: 0
---- !u!114 &94667927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94667922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!114 &94667928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSpawner: {fileID: 0}
+  PSystemToSpawn: 0
   IsShaking: 0
   RegisterShake: 0
 --- !u!225 &94667929
@@ -534,7 +522,6 @@ GameObject:
   - component: {fileID: 376344858}
   - component: {fileID: 376344857}
   - component: {fileID: 376344856}
-  - component: {fileID: 376344855}
   - component: {fileID: 376344854}
   - component: {fileID: 376344853}
   - component: {fileID: 376344852}
@@ -631,19 +618,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 30}
   m_EdgeRadius: 0
---- !u!114 &376344855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376344850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!114 &376344856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,6 +630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSpawner: {fileID: 0}
+  PSystemToSpawn: 0
   IsShaking: 0
   RegisterShake: 0
 --- !u!225 &376344857
@@ -851,6 +827,59 @@ MonoBehaviour:
     - 6
     - 6
     - 6
+--- !u!1 &500591311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 500591312}
+  - component: {fileID: 500591313}
+  m_Layer: 0
+  m_Name: ParticleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &500591312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500591311}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.4797754, y: 1.4746672, z: 124.796646}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &500591313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500591311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pSystem: {fileID: 0}
+  pSystems:
+  - {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
+  - {fileID: 2157061798977361963, guid: e2332a37e0b32da498eedb96780358e7, type: 3}
+  - {fileID: 2157061798977361963, guid: 38ccbffa07e5af0448c0c1b37eb06e8c, type: 3}
+  - {fileID: 2157061798977361963, guid: 869cac778aef48c439d4adaa0362b141, type: 3}
+  - {fileID: 2157061798977361963, guid: cc45f9b427cfe2b40a81476fa2ad658e, type: 3}
+  - {fileID: 2157061798977361963, guid: 0100a0ec38c6d204fa1e9d4fbe809d47, type: 3}
+  - {fileID: 2157061798977361963, guid: 7a6a29f35a0018341a4ca2cb77d2c77b, type: 3}
+  - {fileID: 2157061798977361963, guid: 6512beb045e11324fb6c82a01cc50ef7, type: 3}
 --- !u!1 &514096581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1100,6 @@ GameObject:
   - component: {fileID: 618612483}
   - component: {fileID: 618612482}
   - component: {fileID: 618612481}
-  - component: {fileID: 618612480}
   - component: {fileID: 618612479}
   - component: {fileID: 618612478}
   - component: {fileID: 618612477}
@@ -1168,19 +1196,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 65}
   m_EdgeRadius: 0
---- !u!114 &618612480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618612475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!114 &618612481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,6 +1208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSpawner: {fileID: 0}
+  PSystemToSpawn: 0
   IsShaking: 0
   RegisterShake: 0
 --- !u!225 &618612482
@@ -1829,7 +1846,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &900300290
 GameObject:
@@ -2370,7 +2387,6 @@ GameObject:
   - component: {fileID: 1230638769}
   - component: {fileID: 1230638772}
   - component: {fileID: 1230638773}
-  - component: {fileID: 1230638774}
   - component: {fileID: 1230638776}
   - component: {fileID: 1230638775}
   - component: {fileID: 1230638777}
@@ -2479,21 +2495,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSpawner: {fileID: 0}
+  PSystemToSpawn: 0
   IsShaking: 0
   RegisterShake: 0
---- !u!114 &1230638774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230638767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!50 &1230638775
 Rigidbody2D:
   serializedVersion: 4
@@ -2642,7 +2647,7 @@ Transform:
   m_Children:
   - {fileID: 1842137358}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1264805346
 GameObject:
@@ -3056,7 +3061,7 @@ Transform:
   - {fileID: 1521558915}
   - {fileID: 949091833}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1515575079
 GameObject:
@@ -3298,7 +3303,7 @@ Transform:
   - {fileID: 820554251}
   - {fileID: 1213002007}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1736446624
 GameObject:
@@ -3314,7 +3319,6 @@ GameObject:
   - component: {fileID: 1736446632}
   - component: {fileID: 1736446631}
   - component: {fileID: 1736446630}
-  - component: {fileID: 1736446629}
   - component: {fileID: 1736446628}
   - component: {fileID: 1736446627}
   - component: {fileID: 1736446626}
@@ -3411,19 +3415,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 30}
   m_EdgeRadius: 0
---- !u!114 &1736446629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736446624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!114 &1736446630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3436,6 +3427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSpawner: {fileID: 0}
+  PSystemToSpawn: 0
   IsShaking: 0
   RegisterShake: 0
 --- !u!225 &1736446631
@@ -3799,7 +3792,6 @@ GameObject:
   - component: {fileID: 1855581173}
   - component: {fileID: 1855581172}
   - component: {fileID: 1855581171}
-  - component: {fileID: 1855581170}
   - component: {fileID: 1855581169}
   - component: {fileID: 1855581168}
   - component: {fileID: 1855581167}
@@ -3896,19 +3888,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 30}
   m_EdgeRadius: 0
---- !u!114 &1855581170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855581165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!114 &1855581171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3921,6 +3900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSpawner: {fileID: 0}
+  PSystemToSpawn: 0
   IsShaking: 0
   RegisterShake: 0
 --- !u!225 &1855581172
@@ -4172,7 +4153,7 @@ Transform:
   - {fileID: 1767495760}
   - {fileID: 57572890}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1979753879
 GameObject:
@@ -4188,7 +4169,6 @@ GameObject:
   - component: {fileID: 1979753887}
   - component: {fileID: 1979753886}
   - component: {fileID: 1979753885}
-  - component: {fileID: 1979753884}
   - component: {fileID: 1979753883}
   - component: {fileID: 1979753882}
   - component: {fileID: 1979753881}
@@ -4285,19 +4265,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 30}
   m_EdgeRadius: 0
---- !u!114 &1979753884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979753879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!114 &1979753885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4310,6 +4277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSpawner: {fileID: 0}
+  PSystemToSpawn: 0
   IsShaking: 0
   RegisterShake: 0
 --- !u!225 &1979753886
@@ -4392,7 +4361,6 @@ GameObject:
   - component: {fileID: 2049640524}
   - component: {fileID: 2049640523}
   - component: {fileID: 2049640522}
-  - component: {fileID: 2049640521}
   - component: {fileID: 2049640520}
   - component: {fileID: 2049640519}
   - component: {fileID: 2049640518}
@@ -4489,19 +4457,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 30}
   m_EdgeRadius: 0
---- !u!114 &2049640521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049640516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb95f674efbda2447864ef34d27e081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pSystem: {fileID: 2157061798977361963, guid: e5b63955f11513f44b12cb1eab5d5e66, type: 3}
 --- !u!114 &2049640522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4514,6 +4469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52910eeffafd1c42bf4f7f2e3eefe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSpawner: {fileID: 0}
+  PSystemToSpawn: 0
   IsShaking: 0
   RegisterShake: 0
 --- !u!225 &2049640523
