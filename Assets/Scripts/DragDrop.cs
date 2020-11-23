@@ -12,6 +12,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public DialogueManager DialogueManager;
 
+    public ShakeCollider ShakeCollider;
+
     public List<StoryElement> storyElements;
 
     [SerializeField] private Canvas canvas;
@@ -27,6 +29,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         GameManager = FindObjectOfType<GameManager>();
         DialogueManager = FindObjectOfType<DialogueManager>();
+        ShakeCollider = GetComponent<ShakeCollider>();
         
         canvas = FindObjectOfType<Canvas>();
         rectTransform = GetComponent<RectTransform>();
@@ -112,7 +115,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         mySequence.Play();
 
         //add stage two story elements
-        if (GameManager.GameState == 2 || GameManager.GameState == 3)
+        if ((GameManager.GameState == 2 || GameManager.GameState == 3) && ShakeCollider.IngredientAmountCounter > 1)
         {
             GameManager.IngredientsAdded.Add(this.gameObject);
             this.storyElements[0].TriggerDialogue();

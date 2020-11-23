@@ -17,12 +17,15 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> IngredientsAdded;
 
+    public List<ShakeCollider> ShakeColliders;
+
     // Start is called before the first frame update
     void Start()
     {
         GameState = 0;
         TitleFadeOut();
-        //Invoke("StartExposition", 0.5f); //like a coroutine lmao
+
+        ShakeColliders.AddRange(FindObjectsOfType<ShakeCollider>());
     }
 
     // Update is called once per frame
@@ -89,6 +92,12 @@ public class GameManager : MonoBehaviour
         {
             GameState++;
             IngredientsAdded.Clear();
+            
+            foreach(ShakeCollider sc in ShakeColliders)
+            {
+                sc.IngredientAmountCounter = 0;
+            }
+
         }
         else if (GameState == 4)
         {
