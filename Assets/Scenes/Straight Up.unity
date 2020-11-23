@@ -372,6 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
   DialogueManager: {fileID: 0}
+  ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 1264805348}
   canvas: {fileID: 0}
@@ -710,6 +711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
   DialogueManager: {fileID: 0}
+  ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 1068035025}
   canvas: {fileID: 0}
@@ -1287,6 +1289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
   DialogueManager: {fileID: 0}
+  ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 820554252}
   canvas: {fileID: 0}
@@ -1444,6 +1447,7 @@ MonoBehaviour:
   GameState: 0
   ChangeState: 0
   IngredientsAdded: []
+  ShakeColliders: []
 --- !u!4 &625559219
 Transform:
   m_ObjectHideFlags: 0
@@ -2727,6 +2731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
   DialogueManager: {fileID: 0}
+  ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 243825158}
   canvas: {fileID: 0}
@@ -2897,7 +2902,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.2264151, g: 0.19330722, b: 0.19330722, a: 0}
+  m_BackGroundColor: {r: 0.8117647, g: 0.68235296, b: 0.7764706, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3831,6 +3836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
   DialogueManager: {fileID: 0}
+  ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 1213002006}
   canvas: {fileID: 0}
@@ -4385,6 +4391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
   DialogueManager: {fileID: 0}
+  ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 1031948228}
   canvas: {fileID: 0}
@@ -4762,6 +4769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
   DialogueManager: {fileID: 0}
+  ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 293989743}
   canvas: {fileID: 0}
@@ -5042,6 +5050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
   DialogueManager: {fileID: 0}
+  ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 267797777}
   canvas: {fileID: 0}

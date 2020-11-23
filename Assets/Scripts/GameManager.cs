@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     public List<ShakeCollider> ShakeColliders;
 
+    public Camera MainCamera;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,8 @@ public class GameManager : MonoBehaviour
         TitleFadeOut();
 
         ShakeColliders.AddRange(FindObjectsOfType<ShakeCollider>());
+
+        MainCamera = FindObjectOfType<Camera>();
     }
 
     // Update is called once per frame
@@ -41,11 +45,15 @@ public class GameManager : MonoBehaviour
         {
             TriggerExposition(1);
             ChangeState = false;
+
+            ChangeCameraBGColor(174, 198, 207);
         }
         else if (GameState == 3 && ChangeState == false)
         {
             TriggerExposition(2);
             ChangeState = true;
+
+            ChangeCameraBGColor(174, 207, 183);
         }
         else if(GameState == 4 && ChangeState == true)
         {
@@ -58,6 +66,11 @@ public class GameManager : MonoBehaviour
             EndingFades();
         }
 
+    }
+
+    private void ChangeCameraBGColor(byte r, byte g, byte b)
+    {
+        MainCamera.DOColor(new Color32(r, g, b, 255), 3f);
     }
 
     private void TitleFadeOut()
