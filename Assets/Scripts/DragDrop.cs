@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
@@ -38,13 +39,23 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         originalPosition = new Vector3(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y, 0f);
     }
 
-    private void OnMouseOver() 
+
+    private void OnMouseEnter() 
     {
         if (!DialogueManager.isDialogBoxUp)
         {
-            Debug.Log("i am hovering over the " + gameObject.name + " object");
+            Debug.Log("i am entering the " + gameObject.name + " object");
+            GetComponentInChildren<Text>().DOFade(1f, 0.25f);
         }
+    }
 
+    private void OnMouseExit() 
+    {
+        if (!DialogueManager.isDialogBoxUp)
+        {
+            Debug.Log("i am exiting the " + gameObject.name + " object");
+            GetComponentInChildren<Text>().DOFade(0f, 0.25f);
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -58,6 +69,10 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.blocksRaycasts = false;
 
         canvasGroup.DOFade(0.5f, 0.5f);
+        
+        Sequence mySequence = DOTween.Sequence();
+        mySequence.Append(GetComponentInChildren<Text>().DOFade(0f, 0.25f));
+        mySequence.AppendCallback(()=> gameObject.transform.GetChild(0).gameObject.SetActive(false));
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -81,6 +96,9 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnEndDrag(PointerEventData eventData)
     {
+
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        
         Debug.Log("OnEndDrag");
         canvasGroup.blocksRaycasts = true;
         canvasGroup.DOFade(1f, 0.5f);
