@@ -434,6 +434,7 @@ MonoBehaviour:
   - {fileID: 1264805348}
   - {fileID: 2141102755}
   canvas: {fileID: 0}
+  flipText: 1
 --- !u!114 &94667931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -837,6 +838,7 @@ MonoBehaviour:
   - {fileID: 1068035025}
   - {fileID: 1117275458}
   canvas: {fileID: 0}
+  flipText: 1
 --- !u!114 &376344859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1461,6 +1463,7 @@ MonoBehaviour:
   - {fileID: 820554252}
   - {fileID: 1843029350}
   canvas: {fileID: 0}
+  flipText: 1
 --- !u!114 &618612484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,9 +1712,9 @@ MonoBehaviour:
       slung over his shoulder, ready to approach the day.
     - 'We had an abundance of land, every square inch of it he utilized. He kept
       sprawling vineyards from which he would divine a deep indigo wine. '
-    - 'He was a stoic man, reserved, but, funnily enough, had a penchant for fruit.
+    - He was a stoic man, reserved, but, funnily enough, had a penchant for fruit.
       Alongside the vineyards were orchards of fruit trees - figs, apples, pears,
-      peaches. His  favorite time of the year was the harvest.. '
+      peaches. His  favorite time of the year was the harvest.
     - 'Those were the best days, when he would return home to me, my mother, and
       my five siblings, and would present to us the most vibrant, plump, and juicy
       fruits with his hands caked in the residue of his immense effort. '
@@ -3152,6 +3155,7 @@ MonoBehaviour:
   - {fileID: 243825158}
   - {fileID: 1092238643}
   canvas: {fileID: 0}
+  flipText: 1
 --- !u!114 &1230638770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4335,6 +4339,7 @@ MonoBehaviour:
   - {fileID: 1213002006}
   - {fileID: 1611922487}
   canvas: {fileID: 0}
+  flipText: 1
 --- !u!114 &1736446633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4951,6 +4956,7 @@ MonoBehaviour:
   - {fileID: 1031948228}
   - {fileID: 280342537}
   canvas: {fileID: 0}
+  flipText: 1
 --- !u!114 &1855581174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5369,6 +5375,7 @@ MonoBehaviour:
   - {fileID: 293989743}
   - {fileID: 35234641}
   canvas: {fileID: 0}
+  flipText: 1
 --- !u!114 &1979753888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5651,6 +5658,7 @@ MonoBehaviour:
   - {fileID: 267797777}
   - {fileID: 989371033}
   canvas: {fileID: 0}
+  flipText: 1
 --- !u!114 &2049640525
 MonoBehaviour:
   m_ObjectHideFlags: 0
