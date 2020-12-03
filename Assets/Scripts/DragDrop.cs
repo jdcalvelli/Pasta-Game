@@ -92,6 +92,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
+        GetComponentInChildren<Text>().DOFade(0f, 0.25f);
 
         if (DialogueManager.isDialogBoxUp)
         {
