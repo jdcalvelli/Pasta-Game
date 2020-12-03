@@ -1364,7 +1364,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1767495761}
-  ingredientCounts: 0a000000
+  ingredientCounts: 08000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &618612478
@@ -3268,7 +3268,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1283674874}
-  ingredientCounts: 0a000000
+  ingredientCounts: 08000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!1 &1241083185
@@ -4226,7 +4226,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 57572891}
-  ingredientCounts: 0a000000
+  ingredientCounts: 08000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &1736446627
@@ -4842,7 +4842,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1155954252}
-  ingredientCounts: 0f000000
+  ingredientCounts: 08000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &1855581168
@@ -5259,7 +5259,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1952661515}
-  ingredientCounts: 0f000000
+  ingredientCounts: 08000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &1979753882
@@ -5541,7 +5541,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 900300291}
-  ingredientCounts: 0a000000
+  ingredientCounts: 09000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &2049640519
