@@ -71,7 +71,19 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         Debug.Log(sentence);
-        DialogueText.text = sentence; 
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence)); 
+    }
+
+    //coroutine for animating letters
+    IEnumerator TypeSentence (string sentence)
+    {
+        DialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            DialogueText.text += letter;
+            yield return new WaitForSeconds(0.04f);
+        }
     }
 
     public void EndDialogue()
