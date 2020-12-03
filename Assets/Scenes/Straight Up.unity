@@ -121,6 +121,58 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &35234639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35234640}
+  - component: {fileID: 35234641}
+  m_Layer: 0
+  m_Name: StoryElement4 (Stage 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &35234640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35234639}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.857971, y: -1.6900649, z: 24.510956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463267914}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &35234641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35234639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Onions
+    sentences:
+    - "Great, seems to be turning out well.\r"
+    - "These onions were so large, I wish you had seen them. I cut them down to size
+      before you arrived. \r"
+    - "I can\u2019t pretend, they did bring me to tears a bit. I don\u2019t have
+      a bushy mustache to protect me like my father used to have, after all.\r"
+    - "Time to bring in the cinghiale.\r"
 --- !u!1 &57572889
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,11 +217,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 7
+    name: Herbs
     sentences:
-    - 7
-    - 7
-    - 7
+    - 'Basta, mo basta. Enough now, enough, he would say, once again waving his hand
+      to signal for me to stop. '
+    - "I remember those herbs: basil, rosemary, and thyme. They were all grown in
+      our family\u2019s giardino, our little garden out behind our house. Tendrils
+      of stalks and stems snaked out in every direction from little handmade, concrete
+      beds. "
+    - "They were fighters too.\r"
+    - "Next, he would motion for me to shake in the carrots.\r"
 --- !u!1 &67091682
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test3 stage 2
+    name: Carrots
     sentences:
     - test3
     - test3
@@ -506,10 +563,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test1 stage 2
+    name: Pancetta
     sentences:
-    - test1
-    - still talking
+    - "That much doesn\u2019t feel right to me, but then again\u2026\r"
+    - "Pancetta came right from the pig itself, this bacon, as they call it, comes
+      from packaging. \r"
+    - "Slicing open a package is nothing like watching your father slice a pig\u2019s
+      neck. You feel closer to the pig, thankful for every part of it, determined
+      to be grateful for whatever bit you got and use it so as to respect the pig\u2019s
+      offerings. \r"
+    - "When they cut out the bacon, and put it in packaging, where does the rest
+      of the pig go?\r"
+    - "I think the chicken broth is the next addition?\r"
+--- !u!1 &280342535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280342536}
+  - component: {fileID: 280342537}
+  m_Layer: 0
+  m_Name: StoryElement5 (Stage 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &280342536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280342535}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.857971, y: -1.6900649, z: 24.510956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463267914}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &280342537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280342535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Celery
+    sentences:
+    - "Okay, looks like enough.\r"
+    - "This is proper finocchio. It\u2019s the kind that snaps like twigs, and has
+      the bite and crunch that I remember from Colledimacine. \r"
+    - "The local supermarket sells it, and apparently it\u2019s very popular - for
+      good reason, I\u2019d say.\r"
+    - "I\u2019ll add the onions next."
 --- !u!1 &293989741
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,11 +671,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test 4 stage 2
+    name: Onions
     sentences:
-    - test4
-    - test4
-    - test4
+    - "That amount just doesn\u2019t seem right...but then again, I\u2019m not sure...\r"
+    - "These onions are pre-cut and pre-cubed. \r"
+    - "They didn\u2019t even give me the opportunity to cry over them. \r"
+    - "To cry over their sacrifice for the good of the dish.\r"
+    - "Up next was the cinghiale, I believe...\r"
 --- !u!1 &376344850
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +949,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455999231}
   m_CullTransparentMesh: 0
+--- !u!1 &463267913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 463267914}
+  m_Layer: 0
+  m_Name: Story Elements (State 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &463267914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463267913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.4797754, y: 1.4746672, z: 124.796646}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 989371032}
+  - {fileID: 1117275457}
+  - {fileID: 1092238642}
+  - {fileID: 35234640}
+  - {fileID: 280342536}
+  - {fileID: 2141102754}
+  - {fileID: 1843029349}
+  - {fileID: 1611922486}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &491967835
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,11 +1031,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test 6
+    name: Wine
     sentences:
-    - 6
-    - 6
-    - 6
+    - "Basta, mo basta. Enough, now enough.\r"
+    - "The wine was the culmination of all of my father\u2019s work, encapsulated
+      into a single object. \r"
+    - "He would take the best grapes off of the vine and bring them into the darkness
+      of his barn, and would return day after day to press and pack them into wooden
+      barrels. \r"
+    - "When he felt that they were ready, he would tap the barrels and let us watch
+      the indigo liquid flow into bottle after bottle. \r"
+    - He was never wrong. The wine was always full bodied and fragrant. It tickled
+      your lips and nostrils.
 --- !u!1 &500591311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1612,7 @@ MonoBehaviour:
   ChangeState: 0
   IngredientsAdded: []
   ShakeColliders: []
+  MainCamera: {fileID: 0}
 --- !u!4 &625559219
 Transform:
   m_ObjectHideFlags: 0
@@ -1506,10 +1671,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: EXPOSITORY
+    name: 1940s
     sentences:
-    - ' 1'
-    - ' 1'
+    - " It\u2019s interesting, really. To be Italian is to intimately know conflict."
+    - 'Ancient Rome took advantage of the entire world to then crumble under the
+      weight of its own internal issues. Northern and Southern Italy competed with
+      each other for years until the day when the North finally marched on the South. '
+    - 'They called it Risorgimento: the revival, which in a way, I suppose, it was.
+      A revival of the Roman imperialism, of imposition of will.'
+    - Maybe Italy was never meant to be a unified country.
+    - "We all fight too much; you know how they say Italians are great at arguing
+      and complaining\u2026When we couldn\u2019t do it out in the open, we just moved
+      it into the halls and corridors of the Parliament."
+    - "And, when, by some miracle, we aren\u2019t fighting each other, it seems as
+      though we\u2019re always fighting someone else."
+    - 'My father was an excellent farmer. '
+    - He would leave our home in Colledimacine every morning, walk the few steps
+      down Piazza San Giovanni to his barn, crawl into the darkness, and emerge with
+      his trusty hoe slung over his shoulder, ready to approach the challenges of
+      the day.
+    - 'We had an abundance of land, every square inch of it he utilized. He kept
+      sprawling vineyards from which he would divine a deep indigo wine. '
+    - 'He was a stoic man, reserved, but, funnily enough, had a penchant for fruit.
+      Right alongside the vineyards were orchards of fruit trees - figs, apples,
+      pears, peaches - and his favorite time of the year was always when they were
+      ready to be harvested. '
+    - 'Those were the best days, when he would return home to me, my mother, and
+      my five siblings, and would present to us the most vibrant, plump, and juicy
+      fruits with his hands caked in the residue of his immense effort. '
+    - "I used to love watching the juices drip from his bristly mustache as he savored
+      every bite. \r"
+    - 'Food sustained him, and our family. '
+    - "He taught me to cook, you know, by teaching me how to make pasta al\u2019
+      cinghiale, our region\u2019s signature dish. And whenever he taught me, it
+      always went the same way."
+    - He would put the pasta to boil and call me into the kitchen, waving me over
+      with his hand outstretched behind him.
+    - "He would look intently down into the pan as he oiled it and placed it over
+      the open flame. He would tell me that he\u2019d be showing me how to make the
+      dish again. "
+    - I would ask him if there was a recipe to follow, and he would say not to worry,
+      that he would tell me when enough was enough as he motioned for me to shake
+      in the herbs, the first ingredient.
 --- !u!1 &767013367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,11 +1887,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test 7 stage 2
+    name: Chicken Broth
     sentences:
-    - 7
-    - 7
-    - 7
+    - "I hope that amount is enough...I honestly can\u2019t even remember correctly...\r\n"
+    - 'The soldiers give me their chicken broth in a bottle. It takes me less than
+      a minute to open and pour it. '
+    - "But I wonder, who went to the macelleria to pick out the chickens to use?
+      Who watched it, tasted it, and skimmed it for the hours it takes to make? \r"
+    - "It certainly wasn\u2019t me, and it certainly wasn\u2019t them either.\r"
+    - "Next, I hope, is the wine...\r"
 --- !u!1 &834977134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,10 +2140,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test1
+    name: Pancetta
     sentences:
-    - test1
-    - still talking
+    - 'Basta, mo basta. Enough, now enough.
+
+'
+    - "If the cinghiale is the centerpiece, the pancetta is the arrangement of flowers
+      that adorn it.\r"
+    - "Killing the pig, back in Colledimacine, was an event, a celebration. It would
+      be brought out on Piazza San Giovanni, in front of the entire town, and killed
+      with one swift motion of the knife. \r"
+    - "Then, as they\u2019d cut the pancetta from the pork\u2019s belly, they would
+      parcel out a bit of the pig to everyone. Nothing got left behind, not even
+      the feet. \r"
+    - "The first time I watched, I threw up. But when it\u2019s a part of everyday
+      life, you eventually, somehow, get used to the violence. You have to eat, right?\r"
+    - "Next came the chicken broth.\r"
 --- !u!4 &900300292
 Transform:
   m_ObjectHideFlags: 0
@@ -2084,10 +2303,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: GAME OVER FINAL EXPOSITORY
+    name: 2010
     sentences:
-    - GAME OVER
-    - GAME OVER
+    - "Exactly as I thought, it still tastes nothing like how it did when my father
+      made it. I\u2019m sorry, John Domenico. After I took you through that whole
+      story and everything\u2026\r"
+    - "\u201CIt\u2019s okay, Nonno. I think it tastes awesome, and I\u2019m pretty
+      sure my great grandfather would say the same if he were here with us now.\u201D"
+    - ...
+    - "I guess, in a way, he was.\r"
+--- !u!1 &989371031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 989371032}
+  - component: {fileID: 989371033}
+  m_Layer: 0
+  m_Name: StoryElement1 (Stage 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &989371032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989371031}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.857971, y: -1.6900649, z: 24.510956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463267914}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &989371033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989371031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Pancetta
+    sentences:
+    - "Okay, looks good.\r"
+    - "I bought this pancetta from the local macelleria. I don\u2019t worry, because
+      I can tell that he uses every part of the pig. \r"
+    - "He puts the pig\u2019s feet on display right up next to the rest of the meat
+      behind the glass. And, people must be buying them, because why else would they
+      be so prominently displayed?\r"
+    - 'Next is the chicken broth.
+
+'
 --- !u!1 &994327239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,11 +2489,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test 5 stage 2
+    name: Celery
     sentences:
-    - 5
-    - 5
-    - 5
+    - "My father always seemed to put more...\r"
+    - 'Not finocchio anymore, just celery. '
+    - "It tastes like water and lacks the bite, the crunch when eaten alone. \r"
+    - "At least it\u2019s getting used at all.\r"
+    - "Then came the onions, if I remember correctly...\r"
 --- !u!1 &1039641452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,7 +2643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: By Jd Calvelli
+  m_Text: "By \nJohn Domenico Calvelli"
 --- !u!222 &1062270060
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2415,10 +2696,122 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test2 stage 2
+    name: Cinghiale
     sentences:
-    - test2
-    - test2
+    - "Did my father add more?\r"
+    - "To call what the soldiers gave us cinghiale is a stretch. \r"
+    - "It came out of a can labelled SPAM. Cinghiale comes from here, the Majella
+      Mountains. It\u2019s pink and gelatinous. Cinghiale is dark, smoky, and crumbly.
+      They say it\u2019s pork, though. \r"
+    - "Desperate times.\r"
+    - "So next came...the pancetta, right? I hope?\r"
+--- !u!1 &1092238641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092238642}
+  - component: {fileID: 1092238643}
+  m_Layer: 0
+  m_Name: StoryElement3 (Stage 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1092238642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092238641}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.857971, y: -1.6900649, z: 24.510956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463267914}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1092238643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092238641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Carrots
+    sentences:
+    - "Seems good enough to me.\r"
+    - "Your Uncle Lou, your father\u2019s brother, brought me these carrots earlier
+      in the week. Isn\u2019t that wonderful? He grows them in his own little giardino,
+      too! \r"
+    - "They\u2019re orange as can be, and sweet like you wouldn\u2019t believe. I
+      can\u2019t wait for you to taste them.\r"
+    - "Alright, now comes the celery.\r"
+--- !u!1 &1117275456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1117275457}
+  - component: {fileID: 1117275458}
+  m_Layer: 0
+  m_Name: StoryElement2 (Stage 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1117275457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117275456}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.857971, y: -1.6900649, z: 24.510956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463267914}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117275458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117275456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Cinghiale
+    sentences:
+    - "Alright, I think that\u2019s enough of that.\r"
+    - "It\u2019s incredible to me that we can even get cinghiale here. We used to
+      have to hunt it ourselves. \r"
+    - "It\u2019s easier to get now, in America, than it was to get 60 years ago in
+      Italy when we lived in the Majella Mountains. \r"
+    - "And frankly, it tastes just like I remember it to have tasted in Italy before
+      the war.\r"
+    - "Now, I\u2019ll work in the pancetta.\r"
 --- !u!1 &1155954250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,11 +2856,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test 5
+    name: Celery
     sentences:
-    - 5
-    - 5
-    - 5
+    - "Basta, mo basta. Enough, now enough.\r"
+    - Finochio, fennel, is like Italian celery with a nuttier, earthier taste. Almost
+      like licorice.
+    - "When we weren\u2019t putting it into dishes, we would eat it with our hands
+      like one might eat potato chips. We would just snap off a part of the stalk,
+      and bite down to feel the distinctive crunch.\r"
+    - Next, the onions.
 --- !u!1 &1202649808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,11 +3051,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test 8 stage 2
+    name: Herbs
     sentences:
-    - 7
-    - 7
-    - 7
+    - "Wait, did I put in enough?\r"
+    - "The herbs are dried now. They come from a tin. \r"
+    - "Still the same basil, thyme, and rosemary, but without the snaking tendrils,
+      without the lush green. \r"
+    - "Just flat, flaky specks of brown and black.\r"
+    - "So, next came the carrots, I think?\r"
 --- !u!4 &1213002007
 Transform:
   m_ObjectHideFlags: 0
@@ -2994,11 +3394,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test 6 stage 2
+    name: Wine
     sentences:
-    - 6
-    - 6
-    - 6
+    - "I think my father used to put more...\r"
+    - "This is not my father\u2019s wine. It\u2019s light crimson water. It\u2019s
+      thin, rank, and vinegary. \r"
+    - "My father would have never drank this, let alone use it for his favorite dish.
+      \r"
+    - "But the vineyard is long gone, and the barrels destroyed alongside the barn.\r"
+    - "There\u2019s no other option. It\u2019s either this, or no dish. \r"
+    - "And if the dish dies, my father dies twice.\r"
 --- !u!1 &1283674872
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,11 +3448,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test3
+    name: Carrots
     sentences:
-    - test3
-    - test3
-    - test3
+    - "Basta, mo basta. Enough, now enough.\r"
+    - "Once a week, the produce cart would plough its way through cobblestone to
+      arrive at Piazza San Giovanni. My father made sure that the carrots we bought
+      were almost a brighter shade of orange than the oranges he grew, with green
+      umbrellas for leaves. \r"
+    - Next came the addition of the celery.
 --- !u!1 &1340812445
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,10 +3564,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test2
+    name: Cinghiale
     sentences:
-    - test2
-    - test2
+    - "Basta, mo basta. Enough, now enough.\r"
+    - "The centerpiece of the dish, the cinghiale is the wild boar endemic to the
+      Abruzzo region. My region. \r"
+    - "It dissolves in the mouth, leaving behind a smoky aftertaste like curls around
+      the entire mouth. It\u2019s truly like no other, especially when the owner
+      of the macelleria, the butcher shop, had hunted it himself the morning before
+      you purchased it.\r"
+    - "Next, he would motion for the pancetta.\r"
 --- !u!4 &1355920008
 Transform:
   m_ObjectHideFlags: 0
@@ -3486,10 +3900,73 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: EXPOSITORY 3
+    name: 2010
     sentences:
-    - 3
-    - 3
+    - "I\u2019ve made and remade pasta al\u2019 cinghiale many times since then,
+      and have constantly worried about whether or not I\u2019ve been doing my father\u2019s
+      memory, his sacrifice, any justice. \r"
+    - "It\u2019s just never tasted anything like my father\u2019s used to taste,
+      no matter how hard I\u2019ve tried. It seems like the proportions are just
+      never exactly right; there\u2019s always a little too much of this, a little
+      too little of that.\r"
+    - "So, though you\u2019ve asked me to make it for you today, John Domenico, I
+      can\u2019t promise you that it will taste like what your great grandfather\u2019s
+      would have. \r"
+    - "But, I\u2019ve already put the pasta to boil and oiled the pan. So, I'll start
+      with the herbs.\r"
+--- !u!1 &1611922485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611922486}
+  - component: {fileID: 1611922487}
+  m_Layer: 0
+  m_Name: StoryElement8 (Stage 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611922486
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611922485}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.857971, y: -1.6900649, z: 24.510956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463267914}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611922487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611922485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Herbs
+    sentences:
+    - "Alright, that feels like enough.\r"
+    - "I grew this basil, rosemary, and thyme myself here in New Rochelle, outside
+      in my own little giardino. \r"
+    - "It\u2019s a lot like the one my mother kept in Colledimacine, except now we
+      have proper garden beds.\r"
+    - "The herbs don\u2019t have to fight anymore to grow.\r"
+    - "The carrots come next.\r"
 --- !u!1 &1620625827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,11 +4398,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 7
+    name: Chicken Broth
     sentences:
-    - 7
-    - 7
-    - 7
+    - "Basta, mo basta. Enough, now enough.\r"
+    - "Making chicken broth was its own ordeal. We would go down to the macelleria
+      and ask for whole chickens, which we would break up and simmer in what looked
+      to me like a witch\u2019s cauldron for what seemed like an entire day. \r"
+    - Occasionally, I would be tasked with skimming the foam off of the surface of
+      the liquid and tasting it as it sat on top of the flame, like the lab assistant
+      tasked with testing the potions.
+    - "Making it was certainly an ordeal, but using it was an even bigger one.\r"
+    - "Finally, came the addition of the wine.\r"
 --- !u!1 &1786572967
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,6 +4722,60 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1843029348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843029349}
+  - component: {fileID: 1843029350}
+  m_Layer: 0
+  m_Name: StoryElement7 (Stage 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843029349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843029348}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.857971, y: -1.6900649, z: 24.510956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463267914}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1843029350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843029348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Chicken Broth
+    sentences:
+    - "Alright then, that\u2019s enough of that.\r"
+    - "Your grandmother on your father\u2019s side brings me some broth every so
+      often. \r"
+    - "I don\u2019t have the patience anymore, or the steady enough hands, unfortunately.
+      But she dutifully stirs, tastes, and skims as long as it takes to make sure
+      that it turns out perfect. \r"
+    - "And it always does.\r"
+    - "Finally, I\u2019ll add the wine.\r"
 --- !u!1 &1855581165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4526,10 +5063,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: EXPOSITORY 2
+    name: November, 1943
     sentences:
-    - ' 2'
-    - ' 2'
+    - "As the next phase in Italy\u2019s history of conflict drew nearer, my father
+      grew more somber. \r"
+    - "After his days in the field, he would return to us stone-faced, and with a
+      look of angry determination unfitting with his usual stoic persona. \r"
+    - "He would discuss the impending threat of the forward marching Nazi occupation
+      and the illegitimacy of the Italian Social Republic. \r"
+    - "He would discuss how yet another conqueror was fast approaching, intent on
+      taking control over what rightfully belonged to the people of Abruzzo. \r"
+    - "Soon enough, he would emerge out of the darkness of his barn in the mornings
+      with his hunting rifle slung over his shoulder instead of his hoe. \r"
+    - "Soon enough, he would stop coming home as often, opting instead to stay out
+      in the fields with the Partigiani, the partisans, as a freedom fighter. \r"
+    - "One day, he stopped coming home at all. \r"
+    - "We we\u2019re told he had been shot in the back by a Nazi soldier. \r"
+    - "He died a hero, supposedly. We didn\u2019t see it.\r"
+    - "Soon after, the Nazi\u2019s entered Colledimacine. \r"
+    - "They levelled it. We ran. What choice did we have? \r"
+    - "We ran away from the only place we knew to be home. \rWe took refuge with
+      friends and family in other parts of the country. \r"
+    - "We waited for help to arrive, the Partigiani, the Americans, the British,
+      anyone. \r"
+    - "When the war was over, we returned, and rebuilt our homes from the ground
+      up. \r"
+    - "We tried our best to start over, to rise like phoenixes from the ashes of
+      the past, but our house, no matter what, will always look out onto the fields
+      that brought the Nazis and took my father away.\r"
+    - "Without my father\u2019s hands, the vineyards wilted and crumbled, and the
+      fruit trees shrivelled disappeared. "
+    - "We did what we could without him. So we ate what our liberators could spare.
+      \r"
+    - "I tried to cook in his stead, without his guiding presence. It was my connection
+      to him, and I didn\u2019t want to let it fade. \r"
+    - I put the pasta to boil, oiled the pan, placed it over the flame, and reached
+      for the herbs. That was how to start the recipe, right?
 --- !u!1 &1952661513
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,11 +5143,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: test 4
+    name: Onions
     sentences:
-    - test4
-    - test4
-    - test4
+    - "Basta, mo basta. Enough, now enough.\r"
+    - "My father never cried cutting onions. He said the smell couldn\u2019t break
+      through his bushy mustache. I would always laugh, because it was definitely
+      true. "
+    - "While we didn\u2019t grow onions ourselves, my cousin would bring us fresh
+      ones from his farm next to my father\u2019s every so often, and my father would
+      bring his family our fruits. "
+    - It was a good pairing. A symbiosis. Sweet for savory.
+    - Then came the cinghiale.
 --- !u!1 &1965295493
 GameObject:
   m_ObjectHideFlags: 0
@@ -5211,3 +5786,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2141102753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141102754}
+  - component: {fileID: 2141102755}
+  m_Layer: 0
+  m_Name: StoryElement6 (Stage 3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2141102754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141102753}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.857971, y: -1.6900649, z: 24.510956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463267914}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2141102755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141102753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3d62994c90c7458e8671aeab946a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Wine
+    sentences:
+    - "Perfect.\r"
+    - "Your friend from school, his grandfather still makes wine the traditional
+      way. I make sure to go pick some up from him when he does. \r"
+    - "The best grapes from vineyards get pressed in their basement into wooden barrels,
+      to be tapped only when the time is deemed right. Like my father used to do.\r"
+    - "Even though he\u2019s from another region of Italy, it still reminds me of
+      home.\r"
