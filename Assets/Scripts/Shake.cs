@@ -66,7 +66,7 @@ public class Shake : MonoBehaviour
         // this.oldObjectPosition = objectPosition;
         // this.oldObjectDeltaPos = objectDeltaPos;
 
-        Vector2 mouseAxis = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        Vector2 mouseAxis = new Vector2(0, Input.GetAxis("Mouse Y"));
         //Debug.Log(mouseAxis);
 
         this.IsShaking = Mathf.Sign(mouseAxis.y) != Mathf.Sign(this.oldMouseAxis.y) && 
