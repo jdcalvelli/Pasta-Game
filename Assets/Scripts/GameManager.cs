@@ -86,9 +86,9 @@ public class GameManager : MonoBehaviour
     {
         Sequence mySequence = DOTween.Sequence();
         mySequence.AppendCallback(()=> endingOverlay.SetActive(true));
-        mySequence.Append(endingOverlay.GetComponent<CanvasGroup>().DOFade(1f, 2f));
+        mySequence.Append(endingOverlay.GetComponent<CanvasGroup>().DOFade(1f, 3f));
         mySequence.AppendInterval(4f);
-        mySequence.Append(endingOverlay.transform.GetChild(0).GetComponent<CanvasGroup>().DOFade(0f, 2f));
+        mySequence.Append(endingOverlay.transform.GetChild(0).GetComponent<CanvasGroup>().DOFade(0f, 3f));
         mySequence.AppendInterval(4f);
         mySequence.AppendCallback(()=> Application.Quit());
         
