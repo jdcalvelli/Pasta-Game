@@ -114,11 +114,16 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         mySequence.Append(rectTransform.DOAnchorPos(new Vector3(originalPosition.x, originalPosition.y, 0), 1f).SetEase(Ease.InOutSine));
         mySequence.Play();
 
-        //add stage two story elements
-        if ((GameManager.GameState == 2 || GameManager.GameState == 3) && ShakeCollider.IngredientAmountCounter > 1)
+        //add stage two and three story elements
+        if (GameManager.GameState == 2 && ShakeCollider.IngredientAmountCounter > 1)
         {
             GameManager.IngredientsAdded.Add(this.gameObject);
             this.storyElements[0].TriggerDialogue();
+        }
+        else if (GameManager.GameState == 3 && ShakeCollider.IngredientAmountCounter > 1) 
+        {
+            GameManager.IngredientsAdded.Add(this.gameObject);
+            this.storyElements[1].TriggerDialogue();
         }
     }
 }

@@ -432,6 +432,7 @@ MonoBehaviour:
   ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 1264805348}
+  - {fileID: 2141102755}
   canvas: {fileID: 0}
 --- !u!114 &94667931
 MonoBehaviour:
@@ -516,9 +517,10 @@ MonoBehaviour:
   dialogue:
     name: Carrots
     sentences:
-    - test3
-    - test3
-    - test3
+    - "That much couldn\u2019t be enough, could it?\r"
+    - "These carrots were frozen first, and then sent overseas with the soldiers
+      via boats, trucks, and planes. Carrots used to travel down the street by cart.\r"
+    - "I believe the celery came next?\r"
 --- !u!1 &267797775
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +835,7 @@ MonoBehaviour:
   ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 1068035025}
+  - {fileID: 1117275458}
   canvas: {fileID: 0}
 --- !u!114 &376344859
 MonoBehaviour:
@@ -1214,7 +1217,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Prosciutto
+  m_Text: Pancetta
 --- !u!222 &518598590
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1456,6 +1459,7 @@ MonoBehaviour:
   ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 820554252}
+  - {fileID: 1843029350}
   canvas: {fileID: 0}
 --- !u!114 &618612484
 MonoBehaviour:
@@ -3134,6 +3138,7 @@ MonoBehaviour:
   ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 243825158}
+  - {fileID: 1092238643}
   canvas: {fileID: 0}
 --- !u!114 &1230638770
 MonoBehaviour:
@@ -4316,6 +4321,7 @@ MonoBehaviour:
   ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 1213002006}
+  - {fileID: 1611922487}
   canvas: {fileID: 0}
 --- !u!114 &1736446633
 MonoBehaviour:
@@ -4931,6 +4937,7 @@ MonoBehaviour:
   ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 1031948228}
+  - {fileID: 280342537}
   canvas: {fileID: 0}
 --- !u!114 &1855581174
 MonoBehaviour:
@@ -5347,6 +5354,7 @@ MonoBehaviour:
   ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 293989743}
+  - {fileID: 35234641}
   canvas: {fileID: 0}
 --- !u!114 &1979753888
 MonoBehaviour:
@@ -5628,6 +5636,7 @@ MonoBehaviour:
   ShakeCollider: {fileID: 0}
   storyElements:
   - {fileID: 267797777}
+  - {fileID: 989371033}
   canvas: {fileID: 0}
 --- !u!114 &2049640525
 MonoBehaviour:
