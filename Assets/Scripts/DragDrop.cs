@@ -25,6 +25,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private Shake mouseToShake;
 
+    public bool flipText = true;
+
     private void Awake() 
     {
         GameManager = FindObjectOfType<GameManager>();
@@ -49,9 +51,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         {
             
             Debug.Log("i am entering the " + gameObject.name + " object");
-        
-            gameObject.transform.GetChild(0).gameObject.SetActive(true);
-            GetComponentInChildren<Text>().DOFade(1f, 0.25f);
+
+            if (flipText == true)
+            {
+                GetComponentInChildren<Text>().DOFade(1f, 0.25f);
+                flipText = false;
+            }
+
             
         }
     }
@@ -62,6 +68,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         {
             Debug.Log("i am exiting the " + gameObject.name + " object");
             GetComponentInChildren<Text>().DOFade(0f, 0.25f);
+        }
+        if (flipText == false) 
+        {
+            GetComponentInChildren<Text>().DOFade(0f, 0.25f);
+            flipText = true;
         }
     }
 
@@ -95,10 +106,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 
             mouseToShake.MouseToShake();
-
-            Sequence mySequence2 = DOTween.Sequence();
-            mySequence2.Append(GetComponentInChildren<Text>().DOFade(0f, 0.25f));
-            mySequence2.AppendCallback(()=> gameObject.transform.GetChild(0).gameObject.SetActive(false));
         }
     }
 

@@ -1692,29 +1692,26 @@ MonoBehaviour:
     name: 1940s
     sentences:
     - " It\u2019s interesting, really. To be Italian is to intimately know conflict."
-    - 'Ancient Rome took exploited the entire Mediterranean to then crumble under
-      the weight of its own heartless ambition. Northern and Southern Italy competed
-      with each other for years until the day when the North finally marched on the
-      South. '
+    - 'Ancient Rome exploited the entire Mediterranean to then crumble under its
+      own heartless ambition. Northern and Southern Italy competed for years until
+      the North finally just marched on the South. '
     - 'They called it Risorgimento: the revival, which in a way, I suppose, it was.
       A revival of the Roman imperialism, of imposition of will.'
     - Maybe Italy was never meant to be a unified country.
     - "We all fight too much; you know how they say Italians are great at arguing
-      and complaining\u2026When we couldn\u2019t do it out in the open, we just moved
+      and complaining...When we couldn\u2019t do it out in the open, we just moved
       it into the halls and corridors of the Parliament."
     - "And, when, by some miracle, we aren\u2019t fighting each other, it seems as
       though we\u2019re always fighting someone else."
     - 'My father was an excellent farmer. '
-    - He would leave our home in Colledimacine every morning, walk the few steps
-      down Piazza San Giovanni to his barn, crawl into the darkness, and emerge with
-      his trusty hoe slung over his shoulder, ready to approach the challenges of
-      the day.
+    - He would leave our home in Colledimacine every morning, walk down Piazza San
+      Giovanni to his barn, crawl into the darkness, and emerge with his trusty hoe
+      slung over his shoulder, ready to approach the day.
     - 'We had an abundance of land, every square inch of it he utilized. He kept
       sprawling vineyards from which he would divine a deep indigo wine. '
     - 'He was a stoic man, reserved, but, funnily enough, had a penchant for fruit.
-      Right alongside the vineyards were orchards of fruit trees - figs, apples,
-      pears, peaches - and his favorite time of the year was always when they were
-      ready to be harvested. '
+      Alongside the vineyards were orchards of fruit trees - figs, apples, pears,
+      peaches. His  favorite time of the year was the harvest.. '
     - 'Those were the best days, when he would return home to me, my mother, and
       my five siblings, and would present to us the most vibrant, plump, and juicy
       fruits with his hands caked in the residue of his immense effort. '
@@ -2326,7 +2323,7 @@ MonoBehaviour:
     sentences:
     - "Exactly as I thought, it still tastes nothing like how it did when my father
       made it. I\u2019m sorry, John Domenico. After I took you through that whole
-      story and everything\u2026\r"
+      story and everything..."
     - "\u201CIt\u2019s okay, Nonno. I think it tastes awesome, and I\u2019m pretty
       sure my great grandfather would say the same if he were here with us now.\u201D"
     - ...
