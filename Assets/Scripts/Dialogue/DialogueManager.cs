@@ -91,6 +91,8 @@ public class DialogueManager : MonoBehaviour
 
         isDialogBoxUp = false;
 
+        StopAllCoroutines();
+
         Debug.Log("end conversation");
 
         //reactivate non text stuff in sequence?

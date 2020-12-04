@@ -25,9 +25,16 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GameState = 0;
+        IngredientsAdded.Clear();
+
         TitleFadeOut();
 
         ShakeColliders.AddRange(FindObjectsOfType<ShakeCollider>());
+
+        foreach(ShakeCollider sc in ShakeColliders)
+        {
+            sc.IngredientAmountCounter = 0;
+        }       
 
         MainCamera = FindObjectOfType<Camera>();
     }
@@ -103,7 +110,6 @@ public class GameManager : MonoBehaviour
     {
         if (IngredientsAdded.Count == 8)
         {
-            GameState++;
             IngredientsAdded.Clear();
             
             foreach(ShakeCollider sc in ShakeColliders)
@@ -111,6 +117,7 @@ public class GameManager : MonoBehaviour
                 sc.IngredientAmountCounter = 0;
             }
 
+            GameState++;
         }
         else if (GameState == 4)
         {
