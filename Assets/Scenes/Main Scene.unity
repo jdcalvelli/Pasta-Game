@@ -221,10 +221,9 @@ MonoBehaviour:
     sentences:
     - 'Basta, mo basta. Enough now, enough, he would say, once again waving his hand
       to signal for me to stop. '
-    - "I remember those herbs: basil, rosemary, and thyme. They were all grown in
-      our family\u2019s giardino, our little garden out behind our house. Tendrils
-      of stalks and stems snaked out in every direction from little handmade, concrete
-      beds. "
+    - "I remember those herbs: basil, rosemary, and thyme from our family\u2019s
+      giardino, our little garden behind our house. Tendrils of stalks and stems
+      snaked out in every direction from little handmade, concrete beds. "
     - "They were fighters too.\r"
     - "Next, he would motion for me to shake in the carrots.\r"
 --- !u!1 &67091682
@@ -337,7 +336,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 491967837}
-  ingredientCounts: 0a000000
+  ingredientCounts: 0d000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &94667925
@@ -568,13 +567,12 @@ MonoBehaviour:
   dialogue:
     name: Pancetta
     sentences:
-    - "That much doesn\u2019t feel right to me, but then again\u2026\r"
+    - "That much doesn\u2019t feel right to me, but then again..."
     - "Pancetta came right from the pig itself, this bacon, as they call it, comes
       from packaging. \r"
     - "Slicing open a package is nothing like watching your father slice a pig\u2019s
       neck. You feel closer to the pig, thankful for every part of it, determined
-      to be grateful for whatever bit you got and use it so as to respect the pig\u2019s
-      offerings. \r"
+      to be grateful for whatever bit you got."
     - "When they cut out the bacon, and put it in packaging, where does the rest
       of the pig go?\r"
     - "I think the chicken broth is the next addition?\r"
@@ -676,7 +674,7 @@ MonoBehaviour:
   dialogue:
     name: Onions
     sentences:
-    - "That amount just doesn\u2019t seem right...but then again, I\u2019m not sure...\r"
+    - "That amount just doesn\u2019t seem right...but then again, I\u2019m not sure..."
     - "These onions are pre-cut and pre-cubed. \r"
     - "They didn\u2019t even give me the opportunity to cry over them. \r"
     - "To cry over their sacrifice for the good of the dish.\r"
@@ -741,7 +739,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1355920007}
-  ingredientCounts: 0a000000
+  ingredientCounts: 0d000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &376344853
@@ -1366,7 +1364,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1767495761}
-  ingredientCounts: 08000000
+  ingredientCounts: 0b000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &618612478
@@ -1706,6 +1704,7 @@ MonoBehaviour:
       it into the halls and corridors of the Parliament."
     - "And, when, by some miracle, we aren\u2019t fighting each other, it seems as
       though we\u2019re always fighting someone else."
+    - ...
     - 'My father was an excellent farmer. '
     - He would leave our home in Colledimacine every morning, walk down Piazza San
       Giovanni to his barn, crawl into the darkness, and emerge with his trusty hoe
@@ -1724,11 +1723,12 @@ MonoBehaviour:
     - "He taught me to cook, you know, by teaching me how to make pasta al\u2019
       cinghiale, our region\u2019s signature dish. And whenever he taught me, it
       always went the same way."
-    - He would put the pasta to boil and call me into the kitchen, waving me over
-      with his hand outstretched behind him.
     - "He would look intently down into the pan as he oiled it and placed it over
       the open flame. He would tell me that he\u2019d be showing me how to make the
       dish again. "
+    - I would ask him if there was a recipe to follow, and he would say not to worry,
+      that he would tell me when enough was enough as he motioned for me to shake
+      in the herbs, the first ingredient.
     - I would ask him if there was a recipe to follow, and he would say not to worry,
       that he would tell me when enough was enough as he motioned for me to shake
       in the herbs, the first ingredient.
@@ -2719,8 +2719,8 @@ MonoBehaviour:
     sentences:
     - "Did my father add more?\r"
     - "To call what the soldiers gave us cinghiale is a stretch. \r"
-    - "It came out of a can labelled SPAM. Cinghiale comes from here, the Majella
-      Mountains. It\u2019s pink and gelatinous. Cinghiale is dark, smoky, and crumbly.
+    - "Cinghiale comes from here, the Majella Mountains. This came out of a can labelled
+      SPAM. It\u2019s pink and gelatinous. Cinghiale is dark, smoky, and crumbly.
       They say it\u2019s pork, though. \r"
     - "Desperate times.\r"
     - "So next came...the pancetta, right? I hope?\r"
@@ -3284,7 +3284,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1283674874}
-  ingredientCounts: 08000000
+  ingredientCounts: 0b000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!1 &1241083185
@@ -3473,9 +3473,9 @@ MonoBehaviour:
     sentences:
     - "Basta, mo basta. Enough, now enough.\r"
     - "Once a week, the produce cart would plough its way through cobblestone to
-      arrive at Piazza San Giovanni. My father made sure that the carrots we bought
-      were almost a brighter shade of orange than the oranges he grew, with green
-      umbrellas for leaves. \r"
+      arrive at Piazza San Giovanni. My father only bought carrots that were almost
+      a brighter shade of orange than his oranges, with green umbrellas for leaves.
+      \r"
     - Next came the addition of the celery.
 --- !u!1 &1340812445
 GameObject:
@@ -3590,10 +3590,10 @@ MonoBehaviour:
     - "Basta, mo basta. Enough, now enough.\r"
     - "The centerpiece of the dish, the cinghiale is the wild boar endemic to the
       Abruzzo region. My region. \r"
-    - "It dissolves in the mouth, leaving behind a smoky aftertaste like curls around
-      the entire mouth. It\u2019s truly like no other, especially when the owner
-      of the macelleria, the butcher shop, had hunted it himself the morning before
-      you purchased it.\r"
+    - It dissolves in the mouth, leaving behind a smoky aftertaste that curls around
+      the entire mouth.
+    - "It\u2019s truly like no other, especially when the owner of the macelleria,
+      the butcher shop, had hunted it himself the morning before you purchased it.\r"
     - "Next, he would motion for the pancetta.\r"
 --- !u!4 &1355920008
 Transform:
@@ -3926,10 +3926,9 @@ MonoBehaviour:
     - "I\u2019ve made and remade pasta al\u2019 cinghiale many times since then,
       and have constantly worried about whether or not I\u2019ve been doing my father\u2019s
       memory, his sacrifice, any justice. \r"
-    - "It\u2019s just never tasted anything like my father\u2019s used to taste,
-      no matter how hard I\u2019ve tried. It seems like the proportions are just
-      never exactly right; there\u2019s always a little too much of this, a little
-      too little of that.\r"
+    - "It\u2019s just never tasted anything like my father\u2019s, no matter how
+      hard I\u2019ve tried. The proportions are just never exactly right; there\u2019s
+      always a little too much of this, a little too little of that.\r"
     - "So, though you\u2019ve asked me to make it for you today, John Domenico, I
       can\u2019t promise you that it will taste like what your great grandfather\u2019s
       would have. \r"
@@ -4242,7 +4241,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 57572891}
-  ingredientCounts: 08000000
+  ingredientCounts: 0b000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &1736446627
@@ -4859,7 +4858,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1155954252}
-  ingredientCounts: 08000000
+  ingredientCounts: 0b000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &1855581168
@@ -5100,12 +5099,12 @@ MonoBehaviour:
       taking control over what rightfully belonged to the people of Abruzzo. \r"
     - "Soon enough, he would emerge out of the darkness of his barn in the mornings
       with his hunting rifle slung over his shoulder instead of his hoe. \r"
-    - "Soon enough, he would stop coming home as often, opting instead to stay out
-      in the fields with the Partigiani, the partisans, as a freedom fighter. \r"
+    - "Then, he would stop coming home as often, opting instead to stay out in the
+      fields with the Partigiani, the partisans, as a freedom fighter. \r"
     - "One day, he stopped coming home at all. \r"
-    - "We we\u2019re told he had been shot in the back by a Nazi soldier. \r"
-    - "He died a hero, supposedly. We didn\u2019t see it.\r"
-    - "Soon after, the Nazi\u2019s entered Colledimacine. \r"
+    - "We were told he had been shot in the back by a Nazi soldier. \r"
+    - "He died a hero, supposedly. But, we didn\u2019t see him die.\r"
+    - "Soon after, the Nazis entered Colledimacine. \r"
     - "They levelled it. We ran. What choice did we have? \r"
     - "We ran away from the only place we knew to be home. \rWe took refuge with
       friends and family in other parts of the country. \r"
@@ -5117,7 +5116,7 @@ MonoBehaviour:
       the past, but our house, no matter what, will always look out onto the fields
       that brought the Nazis and took my father away.\r"
     - "Without my father\u2019s hands, the vineyards wilted and crumbled, and the
-      fruit trees shrivelled disappeared. "
+      fruit trees shrivelled and disappeared. "
     - "We did what we could without him. So we ate what our liberators could spare.
       \r"
     - "I tried to cook in his stead, without his guiding presence. It was my connection
@@ -5278,7 +5277,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 1952661515}
-  ingredientCounts: 08000000
+  ingredientCounts: 0b000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &1979753882
@@ -5561,7 +5560,7 @@ MonoBehaviour:
   DragDrop: {fileID: 0}
   storyElements:
   - {fileID: 900300291}
-  ingredientCounts: 09000000
+  ingredientCounts: 0c000000
   shake: {fileID: 0}
   IngredientAmountCounter: 0
 --- !u!50 &2049640519

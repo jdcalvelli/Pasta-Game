@@ -77,7 +77,7 @@ public class Shake : MonoBehaviour
         {
             shakeCounter++;
             shakeTime = Time.time;
-            if (shakeCounter > 3)
+            if (shakeCounter > 4)
             {
                 Debug.Log("Register Shake");
                 RegisterShake = true;
