@@ -70,7 +70,7 @@ public class Shake : MonoBehaviour
         //Debug.Log(mouseAxis);
 
         this.IsShaking = Mathf.Sign(mouseAxis.y) != Mathf.Sign(this.oldMouseAxis.y) && 
-            Mathf.Abs(Mathf.Abs(mouseAxis.y) - Mathf.Abs(oldMouseAxis.y)) > 0.05f;
+            Mathf.Abs(Mathf.Abs(mouseAxis.y) - Mathf.Abs(oldMouseAxis.y)) > 0.1f;
         this.oldMouseAxis = mouseAxis;
 
         if (this.IsShaking)
