@@ -3473,9 +3473,9 @@ MonoBehaviour:
     sentences:
     - "Basta, mo basta. Enough, now enough.\r"
     - "Once a week, the produce cart would plough its way through cobblestone to
-      arrive at Piazza San Giovanni. My father only bought carrots that were almost
-      a brighter shade of orange than his oranges, with green umbrellas for leaves.
-      \r"
+      arrive at Piazza San Giovanni. \r"
+    - "My father only bought carrots that were almost a brighter shade of orange
+      than his oranges, with green umbrellas for leaves. \r"
     - Next came the addition of the celery.
 --- !u!1 &1340812445
 GameObject:
