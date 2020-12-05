@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
 
         sentences = new Queue<string>();
 
-        ToggleDragDrop(false);
+        //ToggleDragDrop(false);
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
         Sequence mySequence = DOTween.Sequence();
         mySequence.Insert(0f, DialogueBox.GetComponent<RectTransform>().DOScaleX(1f, 0.75f).SetEase(Ease.InOutSine));
         mySequence.Insert(0f, BehindDialogueBox.GetComponent<CanvasGroup>().DOFade(0.5f, 0.5f));
-        mySequence.AppendCallback(()=> ToggleDragDrop(false));
+        //mySequence.AppendCallback(()=> ToggleDragDrop(false));
         mySequence.Play();
 
         //deactivate non text stuff
@@ -100,7 +100,7 @@ public class DialogueManager : MonoBehaviour
         Sequence mySequence = DOTween.Sequence();
         mySequence.Insert(0f, DialogueBox.GetComponent<RectTransform>().DOScaleX(0f, 0.75f).SetEase(Ease.InOutSine));
         mySequence.Insert(0f, BehindDialogueBox.GetComponent<CanvasGroup>().DOFade(1f, 0.5f));
-        mySequence.AppendCallback(()=> ToggleDragDrop(true));
+        //mySequence.AppendCallback(()=> ToggleDragDrop(true));
         mySequence.AppendCallback(()=> GameManager.StateChanger());
         mySequence.Play();
     }
